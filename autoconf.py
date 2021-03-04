@@ -16,6 +16,7 @@ def reload_nginx():
     os.system('systemctl reload nginx')
 
 def pulling_changes():
+    print('Pulling changes')
     repo.remotes.origin.pull()
     
 def check_for_changes():
@@ -27,9 +28,7 @@ def check_for_changes():
         time.sleep(300) #Change this if you want faster actualisations
 
     else:
-        print("Repo changed.Pulling changes")
         pulling_changes()
-        print("Reload nginx")
         reload_nginx()
     
 if __init__ == "__main__":
