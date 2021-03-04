@@ -2,7 +2,7 @@
 Some Automatisation files to make it easier to update servers 
 
 
-  $ pip3 install -requirements
+   $ pip3 install -requirements
   
-  $ sudo python3 autoconf.py
+   $ sudo python3 autoconf.py
   
