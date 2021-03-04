@@ -8,7 +8,6 @@ import time
 from git import Repo
 import logging
 
-
 PATH="" #Define Repo Path
 repo = git.Repo(PATH)
 
@@ -33,17 +32,6 @@ def check_for_changes():
         print("Reload nginx")
         reload_nginx()
     
-
-
-
-
 if __init__ == "__main__":
     while True:
         check_for_changes()
-
-
-         
-        
-
-
-
